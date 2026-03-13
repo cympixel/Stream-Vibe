@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Vibe | Subscriptions </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <header class="header" data-js-overlay-menu="">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo" title="Home" aria-label="Home">
+          <img src="/assets/images/Logo.svg" alt="" class="logo__image" width="199" height="60">
+        </a>
+        <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
+          <nav class="header__menu" data-js-navigation="">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/movies" class="header__menu-link">Movies &amp; Shows</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/support" class="header__menu-link">Support</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/subscriptions" class="header__menu-link is-active">Subscriptions</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <div class="search header__search" data-js-search="">
+              <button class="search__button button button--transparent" title="Search" aria-label="Search" type="button" data-js-search-button=""><span class="button__icon icon">
+                  <svg class="search__button-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <line class="search__button-icon-handle" x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                    <circle class="search__button-icon-glass" cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                    <line class="search__button-icon-x1" x1="6" y1="6" x2="18 " y2="18 " stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                    <line class="search__button-icon-x2" x1="6" y1="18 " x2="18 " y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                  </svg>
+                </span></button>
+              <div class="search__overlay" data-js-search-overlay="">
+                <search class="search__panel" role="search">
+                  <form action="/search" method="get">
+                    <div class="search__field" data-js-search-field="">
+                      <input type="search" id="search-field" placeholder="Что ищем?" required="" aria-label="Поле поиска">
+                      <button class="search__submit-button button button--transparent" title="Search" aria-label="Search" type="submit" data-js-search-submit-button=""><span class="button__icon icon">
+                          <svg class="search__button-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <line class="search__button-icon-handle" x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                            <circle class="search__button-icon-glass" cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                          </svg>
+                        </span></button>
+                    </div>
+                  </form>
+                </search>
+              </div>
+            </div>
+            <div class="notifications header__notifications" data-js-notifications="">
+              <button class="notifications__button button button--transparent" title="Notifications" aria-label="Notifications" type="button" data-js-notifications-button=""><span class="button__icon icon">
+                  <svg fill="none" stroke="currentColor">
+                    <use href="/assets/images/icons.svg#notification"></use>
+                  </svg>
+                </span></button>
+              <div class="notifications__overlay" data-js-notifications-overlay="">
+                <div class="notifications__wrapper">
+                  <div class="notifications__panel">
+                    <ul class="notifications__list">
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+        <button class="header__burger-button visible-tablet burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
+          <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+            <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+            <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+            <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <div class="plans-comparison">
+        <section class="section container" aria-labelledby="plans-comparison-title">
+          <header class="section__header">
+            <div class="section__info">
+              <h2 class="section__title h3" id="plans-comparison-title">Compare our plans and find the right one for you</h2>
+              <div class="section__description">
+                <p>StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that&#x27;s right for you.</p>
+              </div>
+            </div>
+          </header>
+          <div class="section__body">
+            <table class="hidden-mobile">
+              <thead>
+                <tr>
+                  <th width="25%">Features</th>
+                  <th width="25%">Basic</th>
+                  <th width="25%">Standart  <div class="badge badge--accent"><span>Popular</span></div>
+                  </th>
+                  <th width="25%">Premium</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Price</td>
+                  <td>$9.99/Month</td>
+                  <td>$12.99/Month</td>
+                  <td>$14.99/Month</td>
+                </tr>
+                <tr>
+                  <td>Content</td>
+                  <td>Access to a wide selection of movies and shows, including some new releases.</td>
+                  <td>Access to a wider selection of movies and shows, including most new releases and exclusive content</td>
+                  <td>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</td>
+                </tr>
+                <tr>
+                  <td>Devices</td>
+                  <td>Watch on one device simultaneously</td>
+                  <td>Watch on Two device simultaneously</td>
+                  <td>Watch on Four device simultaneously</td>
+                </tr>
+                <tr>
+                  <td>Free Trail</td>
+                  <td>7 Days</td>
+                  <td>7 Days</td>
+                  <td>7 Days,</td>
+                </tr>
+                <tr>
+                  <td>Cancel Anytime</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>HDR</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Dolby Atmos</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Ad - Free</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Offline Viewing</td>
+                  <td>No</td>
+                  <td>Yes, for select titles.</td>
+                  <td>Yes, for all titles.</td>
+                </tr>
+                <tr>
+                  <td>Family Sharing</td>
+                  <td>No</td>
+                  <td>Yes, up to 5 family members.</td>
+                  <td>Yes, up to 6 family members.</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="visible-mobile tabs" data-js-tabs="{&quot;navigationTargetElementId&quot;:null}">
+              <div class="tabs-navigation" role="tablist" aria-labelledby="plans-comparison-tabs-title-title" data-js-tabs-navigation="">
+                <h3 class="visually-hidden" id="plans-comparison-tabs-title-title">plans-comparison-tabs-title</h3>
+                <div class="tabs-navigation__button is-active" aria-controls="basic-tabpanel" id="basic-tab" role="tab" aria-selected="true" tabindex="0" data-js-tabs-button="">Basic</div>
+                <div class="tabs-navigation__button" aria-controls="standart-tabpanel" id="standart-tab" role="tab" aria-selected="false" tabindex="-1" data-js-tabs-button="">Standart</div>
+                <div class="tabs-navigation__button" aria-controls="premium-tabpanel" id="premium-tab" role="tab" aria-selected="false" tabindex="-1" data-js-tabs-button="">Premium</div>
+              </div>
+              <div class="tabs__body">
+                <div class="tabs__content is-active" id="basic-tabpanel" aria-labelledby="basic-tab" tabindex="0" data-js-tabs-content="">
+                  <div class="specifications">
+                    <dl class="specifications__list">
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Price</dt>
+                        <dd class="specifications__value">$9.99/Month</dd>
+                      </div>
+                      <div class="specifications__item specifications__item--wide">
+                        <dt class="specifications__key">Content</dt>
+                        <dd class="specifications__value">Access to a wide selection of movies and shows, including some new releases.</dd>
+                      </div>
+                      <div class="specifications__item specifications__item--wide">
+                        <dt class="specifications__key">Devices</dt>
+                        <dd class="specifications__value">Watch on one device simultaneously</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Free Trail</dt>
+                        <dd class="specifications__value">7 Days</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Cancel Anytime</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">HDR</dt>
+                        <dd class="specifications__value">No</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Dolby Atmos</dt>
+                        <dd class="specifications__value">No</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Ad - Free</dt>
+                        <dd class="specifications__value">No</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Offline Viewing</dt>
+                        <dd class="specifications__value">No</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Family Sharing</dt>
+                        <dd class="specifications__value">No</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+                <div class="tabs__content" id="standart-tabpanel" aria-labelledby="standart-tab" tabindex="0" data-js-tabs-content="">
+                  <div class="specifications">
+                    <dl class="specifications__list">
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Price</dt>
+                        <dd class="specifications__value">$12.99/Month</dd>
+                      </div>
+                      <div class="specifications__item specifications__item--wide">
+                        <dt class="specifications__key">Content</dt>
+                        <dd class="specifications__value">Access to a wider selection of movies and shows, including most new releases and exclusive content</dd>
+                      </div>
+                      <div class="specifications__item specifications__item--wide">
+                        <dt class="specifications__key">Devices</dt>
+                        <dd class="specifications__value">Watch on Two device simultaneously</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Free Trail</dt>
+                        <dd class="specifications__value">7 Days</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Cancel Anytime</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">HDR</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Dolby Atmos</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Ad - Free</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Offline Viewing</dt>
+                        <dd class="specifications__value">Yes, for select titles.</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Family Sharing</dt>
+                        <dd class="specifications__value">Yes, up to 5 family members.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+                <div class="tabs__content" id="premium-tabpanel" aria-labelledby="premium-tab" tabindex="0" data-js-tabs-content="">
+                  <div class="specifications">
+                    <dl class="specifications__list">
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Price</dt>
+                        <dd class="specifications__value">$14.99/Month</dd>
+                      </div>
+                      <div class="specifications__item specifications__item--wide">
+                        <dt class="specifications__key">Content</dt>
+                        <dd class="specifications__value">Access to a widest selection of movies and shows, including all new releases and Offline Viewing</dd>
+                      </div>
+                      <div class="specifications__item specifications__item--wide">
+                        <dt class="specifications__key">Devices</dt>
+                        <dd class="specifications__value">Watch on Four device simultaneously</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Free Trail</dt>
+                        <dd class="specifications__value">7 Days,</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Cancel Anytime</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">HDR</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Dolby Atmos</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Ad - Free</dt>
+                        <dd class="specifications__value">Yes</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Offline Viewing</dt>
+                        <dd class="specifications__value">Yes, for all titles.</dd>
+                      </div>
+                      <div class="specifications__item">
+                        <dt class="specifications__key">Family Sharing</dt>
+                        <dd class="specifications__value">Yes, up to 6 family members.</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="section container" aria-labelledby="plans-id">
+        <header class="section__header">
+          <div class="section__info">
+            <h2 class="section__title h3" id="plans-id">Choose the plan that&#x27;s right for you</h2>
+            <div class="section__description">
+              <p>Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+            </div>
+          </div>
+          <div class="section__actions">
+            <div class="tabs-navigation" role="tablist" aria-labelledby="plans-tabs-title" id="plans-tabs-navigation" data-js-tabs-navigation="">
+              <h3 class="visually-hidden" id="plans-tabs-title">plans-tabs</h3>
+              <div class="tabs-navigation__button is-active" aria-controls="monthly-tabpanel" id="monthly-tab" role="tab" aria-selected="true" tabindex="0" data-js-tabs-button="">Monthly</div>
+              <div class="tabs-navigation__button" aria-controls="yearly-tabpanel" id="yearly-tab" role="tab" tabindex="-1" data-js-tabs-button="">Yearly</div>
+            </div>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="tabs" data-js-tabs="{&quot;navigationTargetElementId&quot;:&quot;plans-tabs-navigation&quot;}">
+            <div class="tabs__body">
+              <div class="tabs__content is-active" id="monthly-tabpanel" aria-labelledby="monthly-tab" tabindex="0" data-js-tabs-content="">
+                <ul class="grid grid--3">
+                  <li class="grid__item">
+                    <div class="plan-card">
+                      <div class="plan-card__info">
+                        <h3 class="plan-card__title h4">Basic Plan</h3>
+                        <div class="plan-card__description">
+                          <p>Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                        </div>
+                      </div>
+                      <div class="plan-card__conditions"><span class="plan-card__price">$9.99</span><span class="plan-card__period">/month</span></div>
+                      <div class="plan-card__actions">
+                        <a class="button button--black-08" href="/subscriptions"><span class="button__label">Start Free Trial</span></a>
+                        <a class="button" href="/subscriptions"><span class="button__label">Choose Plan</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="grid__item">
+                    <div class="plan-card">
+                      <div class="plan-card__info">
+                        <h3 class="plan-card__title h4">Standard Plan</h3>
+                        <div class="plan-card__description">
+                          <p>Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                        </div>
+                      </div>
+                      <div class="plan-card__conditions"><span class="plan-card__price">$12.99</span><span class="plan-card__period">/month</span></div>
+                      <div class="plan-card__actions">
+                        <a class="button button--black-08" href="/subscriptions"><span class="button__label">Start Free Trial</span></a>
+                        <a class="button" href="/subscriptions"><span class="button__label">Choose Plan</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="grid__item">
+                    <div class="plan-card">
+                      <div class="plan-card__info">
+                        <h3 class="plan-card__title h4">Premium Plan</h3>
+                        <div class="plan-card__description">
+                          <p>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                        </div>
+                      </div>
+                      <div class="plan-card__conditions"><span class="plan-card__price">$14.99</span><span class="plan-card__period">/month</span></div>
+                      <div class="plan-card__actions">
+                        <a class="button button--black-08" href="/subscriptions"><span class="button__label">Start Free Trial</span></a>
+                        <a class="button" href="/subscriptions"><span class="button__label">Choose Plan</span></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tabs__content" id="yearly-tabpanel" aria-labelledby="yearly-tab" tabindex="0" data-js-tabs-content="">
+                <ul class="grid grid--3">
+                  <li class="grid__item">
+                    <div class="plan-card">
+                      <div class="plan-card__info">
+                        <h3 class="plan-card__title h4">Basic Plan</h3>
+                        <div class="plan-card__description">
+                          <p>Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                        </div>
+                      </div>
+                      <div class="plan-card__conditions"><span class="plan-card__price">$39.99</span><span class="plan-card__period">/year</span></div>
+                      <div class="plan-card__actions">
+                        <a class="button button--black-08" href="/subscriptions"><span class="button__label">Start Free Trial</span></a>
+                        <a class="button" href="/subscriptions"><span class="button__label">Choose Plan</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="grid__item">
+                    <div class="plan-card">
+                      <div class="plan-card__info">
+                        <h3 class="plan-card__title h4">Standard Plan</h3>
+                        <div class="plan-card__description">
+                          <p>Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                        </div>
+                      </div>
+                      <div class="plan-card__conditions"><span class="plan-card__price">$48.99</span><span class="plan-card__period">/year</span></div>
+                      <div class="plan-card__actions">
+                        <a class="button button--black-08" href="/subscriptions"><span class="button__label">Start Free Trial</span></a>
+                        <a class="button" href="/subscriptions"><span class="button__label">Choose Plan</span></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="grid__item">
+                    <div class="plan-card">
+                      <div class="plan-card__info">
+                        <h3 class="plan-card__title h4">Premium Plan</h3>
+                        <div class="plan-card__description">
+                          <p>Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                        </div>
+                      </div>
+                      <div class="plan-card__conditions"><span class="plan-card__price">$54.99</span><span class="plan-card__period">/year</span></div>
+                      <div class="plan-card__actions">
+                        <a class="button button--black-08" href="/subscriptions"><span class="button__label">Start Free Trial</span></a>
+                        <a class="button" href="/subscriptions"><span class="button__label">Choose Plan</span></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner container" aria-labelledby="banner-title">
+        <div class="banner__inner">
+          <div class="banner__body">
+            <h2 class="banner__title" id="banner-title">Start your free trial today!</h2>
+            <div class="banner__desc">
+              <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+          </div>
+          <a class="banner__btn button" href="/subscriptions"><span class="button__label">Start a Free Trail</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Home</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Categories</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Devices</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Movies</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Popular</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Support</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Subscription</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Plans</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Features</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Connect With Us</a>
+            <div class="footer__soc1als soc1als">
+              <ul class="soc1als__list">
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Facebook" aria-label="Facebook" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#facebook"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Twitter" aria-label="Twitter" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#twitter"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="LinkedIn" aria-label="LinkedIn" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#linked-in"></use>
+                      </svg>
+                    </span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer__extra">
+          <p class="footer__copyright">@2023 streamvib, All Rights Reserved</p>
+          <div class="footer__extra-links">
+            <a href="/" class="footer__extra-link">Terms of Use</a>
+            <a href="/" class="footer__extra-link">Privacy Policy</a>
+            <a href="/" class="footer__extra-link">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

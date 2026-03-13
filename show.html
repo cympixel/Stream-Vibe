@@ -1,0 +1,1220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Vibe | Show - Stranger Things </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <header class="header" data-js-overlay-menu="">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo" title="Home" aria-label="Home">
+          <img src="/assets/images/Logo.svg" alt="" class="logo__image" width="199" height="60">
+        </a>
+        <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
+          <nav class="header__menu" data-js-navigation="">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/movies" class="header__menu-link">Movies &amp; Shows</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/support" class="header__menu-link">Support</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/subscriptions" class="header__menu-link">Subscriptions</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <div class="search header__search" data-js-search="">
+              <button class="search__button button button--transparent" title="Search" aria-label="Search" type="button" data-js-search-button=""><span class="button__icon icon">
+                  <svg class="search__button-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <line class="search__button-icon-handle" x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                    <circle class="search__button-icon-glass" cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                    <line class="search__button-icon-x1" x1="6" y1="6" x2="18 " y2="18 " stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                    <line class="search__button-icon-x2" x1="6" y1="18 " x2="18 " y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                  </svg>
+                </span></button>
+              <div class="search__overlay" data-js-search-overlay="">
+                <search class="search__panel" role="search">
+                  <form action="/search" method="get">
+                    <div class="search__field" data-js-search-field="">
+                      <input type="search" id="search-field" placeholder="Что ищем?" required="" aria-label="Поле поиска">
+                      <button class="search__submit-button button button--transparent" title="Search" aria-label="Search" type="submit" data-js-search-submit-button=""><span class="button__icon icon">
+                          <svg class="search__button-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <line class="search__button-icon-handle" x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                            <circle class="search__button-icon-glass" cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                          </svg>
+                        </span></button>
+                    </div>
+                  </form>
+                </search>
+              </div>
+            </div>
+            <div class="notifications header__notifications" data-js-notifications="">
+              <button class="notifications__button button button--transparent" title="Notifications" aria-label="Notifications" type="button" data-js-notifications-button=""><span class="button__icon icon">
+                  <svg fill="none" stroke="currentColor">
+                    <use href="/assets/images/icons.svg#notification"></use>
+                  </svg>
+                </span></button>
+              <div class="notifications__overlay" data-js-notifications-overlay="">
+                <div class="notifications__wrapper">
+                  <div class="notifications__panel">
+                    <ul class="notifications__list">
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+        <button class="header__burger-button visible-tablet burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
+          <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+            <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+            <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+            <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <div class="ShowBanner">
+        <section class="container" aria-labelledby="show-banner-title">
+          <div class="movie-banner-card">
+            <img srcset="/assets/images/3-320x166.jpg 320w, /assets/images/3-400x208.jpg 400w, /assets/images/3-640x333.jpg 640w, /assets/images/3-800x416.jpg 800w, /assets/images/3-1024x532.jpg 1024w, /assets/images/3-1280x666.jpg 1280w, /assets/images/3-1440x749.jpg 1440w, /assets/images/3-1594x835.jpg 1594w" src="/assets/images/3-1594x835.jpg" sizes="(min-width: 1594px) 1594px, 100vw" width="1594" height="835" alt decoding="async" loading="lazy" class="movie-banner-card__image">
+            <div class="movie-banner-card__inner movie-banner-card__inner--small-padding-y">
+              <div class="movie-banner-card__body">
+                <h1 id="show-banner-title" class="movie-banner-card__title h3">Stranger Things</h1>
+                <div class="movie-banner-card__desc hidden-mobile">
+                  <p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+                </div>
+              </div>
+              <footer class="movie-banner-card__footer">
+                <button class="movie-banner-card__play-btn button" type="button"><span class="button__icon icon">
+                    <svg fill="currentColor" stroke="none">
+                      <use href="/assets/images/icons.svg#play"></use>
+                    </svg>
+                  </span><span class="button__label">Play Now</span></button>
+                <div class="movie-banner-card__actions">
+                  <button class="button button--black-06" title="Add" aria-label="Add" type="button"><span class="button__icon icon">
+                      <svg fill="none" stroke="currentColor">
+                        <use href="/assets/images/icons.svg#plus"></use>
+                      </svg>
+                    </span></button>
+                  <button class="button button--black-06" title="Like" aria-label="Like" type="button"><span class="button__icon icon">
+                      <svg fill="none" stroke="currentColor">
+                        <use href="/assets/images/icons.svg#like"></use>
+                      </svg>
+                    </span></button>
+                  <button class="button button--black-06" title="Volume" aria-label="Volume" type="button"><span class="button__icon icon">
+                      <svg fill="none" stroke="currentColor">
+                        <use href="/assets/images/icons.svg#volume"></use>
+                      </svg>
+                    </span></button>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="movie-details container" aria-labelledby="movie-details-title">
+        <h2 class="visually-hidden" id="movie-details-title">Detailed movie information</h2>
+        <div class="movie-details__main">
+          <div class="movie-details__panel movie-details__panel--seasons">
+            <div class="movie-details__group movie-details__group--big-gap-y">
+              <h3 class="h4">Seasons and Episodes</h3>
+              <div class="seasons">
+                <ul class="seasons accordion-group accordion-group--dark">
+                  <li class="accordion-group__item">
+                    <div class="accordion">
+                      <details class="accordion__details" name="seasons" open="">
+                        <summary class="accordion__summary">
+                          <h3 class="accordion__title h4"><span role="term" aria-details="season-0">Season 01</span><span class="accordion__subtitle">9 Episodes</span>
+                            <div class="accordion__arrow"><span class="icon">
+                                <svg fill="none" stroke="currentColor">
+                                  <use href="/assets/images/icons.svg#arrow-down"></use>
+                                </svg>
+                              </span></div>
+                          </h3>
+                        </summary>
+                      </details>
+                      <div class="accordion__content" id="season-0" role="definition">
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <ul class="seasons__list">
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">01</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">02</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">03</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">04</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">05</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">06</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">07</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">08</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">09</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion-group__item">
+                    <div class="accordion">
+                      <details class="accordion__details" name="seasons">
+                        <summary class="accordion__summary">
+                          <h3 class="accordion__title h4"><span role="term" aria-details="season-1">Season 02</span><span class="accordion__subtitle">5 Episodes</span>
+                            <div class="accordion__arrow"><span class="icon">
+                                <svg fill="none" stroke="currentColor">
+                                  <use href="/assets/images/icons.svg#arrow-down"></use>
+                                </svg>
+                              </span></div>
+                          </h3>
+                        </summary>
+                      </details>
+                      <div class="accordion__content" id="season-1" role="definition">
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <ul class="seasons__list">
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">01</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">02</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">03</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">04</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">05</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="accordion-group__item">
+                    <div class="accordion">
+                      <details class="accordion__details" name="seasons">
+                        <summary class="accordion__summary">
+                          <h3 class="accordion__title h4"><span role="term" aria-details="season-2">Season 03</span><span class="accordion__subtitle">3 Episodes</span>
+                            <div class="accordion__arrow"><span class="icon">
+                                <svg fill="none" stroke="currentColor">
+                                  <use href="/assets/images/icons.svg#arrow-down"></use>
+                                </svg>
+                              </span></div>
+                          </h3>
+                        </summary>
+                      </details>
+                      <div class="accordion__content" id="season-2" role="definition">
+                        <div class="accordion__content-inner">
+                          <div class="accordion__content-body">
+                            <ul class="seasons__list">
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">01</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">02</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="seasons__item">
+                                <div class="episode-card">
+                                  <div class="episode-card__number">03</div>
+                                  <div class="episode-card__player" data-js-video-player="">
+                                    <video src="/assets/example.mp4" class="episode-card__video" poster="/assets/images/1.jpg" width="172" height="118" data-js-video-player-video=""></video>
+                                    <button data-js-video-player-play-button="" type="button" class="episode-card__play-button is-active" aria-label="Play video" title="Play video"><span class="episode-card__play-button-icon icon">
+                                        <svg fill="none" stroke="currentColor">
+                                          <use href="/assets/images/icons.svg#play-circle"></use>
+                                        </svg>
+                                      </span></button>
+                                  </div>
+                                  <div class="episode-card__body">
+                                    <div class="episode-card__info">
+                                      <h4 class="episode-card__title h6">Chapter One : The Vanishing of Will Byers</h4>
+                                      <div class="episode-card__duration"><span class="icon" aria-label="Duration">
+                                          <svg fill="none" stroke="currentColor">
+                                            <use href="/assets/images/icons.svg#clock_stroke"></use>
+                                          </svg>
+                                        </span><span>49 min</span></div>
+                                    </div>
+                                    <div class="episode-card__description hidden-mobile">
+                                      <p>On his way from a friend’s house, young Will sees something terrifying . Nearby, a sinister secret lurks in the depths of a government lab.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="movie-details__panel movie-details__panel--description">
+            <div class="movie-details__group">
+              <h3 class="movie-details__title">Description</h3>
+              <div class="movie-details__description">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</div>
+            </div>
+          </div>
+          <div class="movie-details__panel">
+            <header class="movie-details__panel-header">
+              <h3 class="movie-details__title">Cast</h3>
+              <div class="slider-navigation slider-navigation--rounded hidden-mobile" id="movie-cast-slider-navigation" data-js-slider-navigation="">
+                <button class="slider-navigation__arrow-button slider-navigation__arrow-button--previous button button--black-08" title="previous sLide" aria-label="previous sLide" type="button" data-js-slider-previous-button=""><span class="button__icon icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#arrow-left"></use>
+                    </svg>
+                  </span></button>
+                <button class="slider-navigation__arrow-button slider-navigation__arrow-button--next button button--black-08" title="next sLide" aria-label="next sLide" type="button" data-js-slider-next-button=""><span class="button__icon icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#arrow-right"></use>
+                    </svg>
+                  </span></button>
+              </div>
+            </header>
+            <div class="slider" data-js-slider="{&quot;sliderParams&quot;:{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;spaceBetween&quot;:10,&quot;breakpoints&quot;:{&quot;1024&quot;:{&quot;slidesPerView&quot;:&quot;auto&quot;,&quot;spaceBetween&quot;:20}}},&quot;navigationTargetElementId&quot;:&quot;movie-cast-slider-navigation&quot;}">
+              <div class="slider__swiper swiper" data-js-slider-swiper="">
+                <ul class="swiper__list swiper-wrapper">
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/1-103x109.jpg 103w" src="/assets/images/1-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/2-103x109.jpg 103w" src="/assets/images/2-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/3-103x109.jpg 103w" src="/assets/images/3-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/4-103x109.jpg 103w" src="/assets/images/4-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/5-103x109.jpg 103w" src="/assets/images/5-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/6-103x109.jpg 103w" src="/assets/images/6-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/7-103x109.jpg 103w" src="/assets/images/7-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/8-103x109.jpg 103w" src="/assets/images/8-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/5-103x109.jpg 103w" src="/assets/images/5-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="person-card">
+                      <img srcset="/assets/images/6-103x109.jpg 103w" src="/assets/images/6-103x109.jpg" sizes="(min-width: 103px) 103px, 100vw" width="103" height="109" alt="Rishab Shetty" decoding="async" loading="lazy" class="person-card__image" title="Rishab Shetty">
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="movie-details__panel movie-details__panel--large-gap">
+            <header class="movie-details__panel-header">
+              <h3 class="movie-details__title">Reviews</h3>
+              <a class="button button--black-08" href="/"><span class="button__icon icon">
+                  <svg fill="none" stroke="currentColor">
+                    <use href="/assets/images/icons.svg#plus"></use>
+                  </svg>
+                </span><span class="button__label">Add Your Review</span></a>
+            </header>
+            <div class="slider" data-js-slider="{&quot;sliderParams&quot;:{&quot;slidesPerView&quot;:1,&quot;slidesPerGroup&quot;:1,&quot;spaceBetween&quot;:16,&quot;breakpoints&quot;:{&quot;1024&quot;:{&quot;slidesPerView&quot;:2,&quot;slidesPerGroup&quot;:2,&quot;spaceBetween&quot;:20}}},&quot;navigationTargetElementId&quot;:null}">
+              <div class="slider__swiper swiper" data-js-slider-swiper="">
+                <ul class="swiper__list swiper-wrapper">
+                  <li class="slider__item swiper-slide">
+                    <div class="review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__author">
+                          <h4 class="review-card__name h6">Aniket Roy</h4>
+                          <p class="review-card__subtitle"></p>
+                        </div>
+                        <div class="badge"><span>
+                            <div class="rating-view" aria-label="Rating 4.5 stars" title="Rating 4.5 stars" style="--ratingViewValue:4.5">
+                              <div class="rating-view__stars">
+                                <img src="/assets/images/stars__unfilled.svg" alt="" class="rating-view__stars-unfilled" width="98" height="18">
+                                <img src="/assets/images/stars__filled.svg" alt="" class="rating-view__stars-filled" width="98" height="18">
+                              </div>
+                              <div class="rating-view__label">4.5</div>
+                            </div>
+                          </span></div>
+                      </header>
+                      <div class="review-card__body">
+                        <p>This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__author">
+                          <h4 class="review-card__name h6">Swaraj</h4>
+                          <p class="review-card__subtitle"></p>
+                        </div>
+                        <div class="badge"><span>
+                            <div class="rating-view" aria-label="Rating 5 stars" title="Rating 5 stars" style="--ratingViewValue:5">
+                              <div class="rating-view__stars">
+                                <img src="/assets/images/stars__unfilled.svg" alt="" class="rating-view__stars-unfilled" width="98" height="18">
+                                <img src="/assets/images/stars__filled.svg" alt="" class="rating-view__stars-filled" width="98" height="18">
+                              </div>
+                              <div class="rating-view__label">5</div>
+                            </div>
+                          </span></div>
+                      </header>
+                      <div class="review-card__body">
+                        <p>A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__author">
+                          <h4 class="review-card__name h6">B. Ajaneesh Loknath</h4>
+                          <p class="review-card__subtitle"></p>
+                        </div>
+                        <div class="badge"><span>
+                            <div class="rating-view" aria-label="Rating 4 stars" title="Rating 4 stars" style="--ratingViewValue:4">
+                              <div class="rating-view__stars">
+                                <img src="/assets/images/stars__unfilled.svg" alt="" class="rating-view__stars-unfilled" width="98" height="18">
+                                <img src="/assets/images/stars__filled.svg" alt="" class="rating-view__stars-filled" width="98" height="18">
+                              </div>
+                              <div class="rating-view__label">4</div>
+                            </div>
+                          </span></div>
+                      </header>
+                      <div class="review-card__body">
+                        <p>This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__author">
+                          <h4 class="review-card__name h6">BLoknath</h4>
+                          <p class="review-card__subtitle"></p>
+                        </div>
+                        <div class="badge"><span>
+                            <div class="rating-view" aria-label="Rating 5 stars" title="Rating 5 stars" style="--ratingViewValue:5">
+                              <div class="rating-view__stars">
+                                <img src="/assets/images/stars__unfilled.svg" alt="" class="rating-view__stars-unfilled" width="98" height="18">
+                                <img src="/assets/images/stars__filled.svg" alt="" class="rating-view__stars-filled" width="98" height="18">
+                              </div>
+                              <div class="rating-view__label">5</div>
+                            </div>
+                          </span></div>
+                      </header>
+                      <div class="review-card__body">
+                        <p>This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__author">
+                          <h4 class="review-card__name h6">Waraj</h4>
+                          <p class="review-card__subtitle"></p>
+                        </div>
+                        <div class="badge"><span>
+                            <div class="rating-view" aria-label="Rating 4.5 stars" title="Rating 4.5 stars" style="--ratingViewValue:4.5">
+                              <div class="rating-view__stars">
+                                <img src="/assets/images/stars__unfilled.svg" alt="" class="rating-view__stars-unfilled" width="98" height="18">
+                                <img src="/assets/images/stars__filled.svg" alt="" class="rating-view__stars-filled" width="98" height="18">
+                              </div>
+                              <div class="rating-view__label">4.5</div>
+                            </div>
+                          </span></div>
+                      </header>
+                      <div class="review-card__body">
+                        <p>A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slider__item swiper-slide">
+                    <div class="review-card">
+                      <header class="review-card__header">
+                        <div class="review-card__author">
+                          <h4 class="review-card__name h6">B. Ajaneesh Loknath</h4>
+                          <p class="review-card__subtitle"></p>
+                        </div>
+                        <div class="badge"><span>
+                            <div class="rating-view" aria-label="Rating 4 stars" title="Rating 4 stars" style="--ratingViewValue:4">
+                              <div class="rating-view__stars">
+                                <img src="/assets/images/stars__unfilled.svg" alt="" class="rating-view__stars-unfilled" width="98" height="18">
+                                <img src="/assets/images/stars__filled.svg" alt="" class="rating-view__stars-filled" width="98" height="18">
+                              </div>
+                              <div class="rating-view__label">4</div>
+                            </div>
+                          </span></div>
+                      </header>
+                      <div class="review-card__body">
+                        <p>This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn’t watch it.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="slider__navigation slider-navigation slider-navigation--rounded" data-js-slider-navigation="">
+                <button class="slider-navigation__arrow-button slider-navigation__arrow-button--previous button button--black-10" title="previous sLide" aria-label="previous sLide" type="button" data-js-slider-previous-button=""><span class="button__icon icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#arrow-left"></use>
+                    </svg>
+                  </span></button>
+                <div class="slider-navigation__pagination" data-js-slider-pagination=""></div>
+                <button class="slider-navigation__arrow-button slider-navigation__arrow-button--next button button--black-10" title="next sLide" aria-label="next sLide" type="button" data-js-slider-next-button=""><span class="button__icon icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#arrow-right"></use>
+                    </svg>
+                  </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="movie-details__info">
+          <div class="movie-details__panel">
+            <div class="movie-details__groups">
+              <div class="movie-details__group">
+                <h3 class="movie-details__title"><span class="icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#search"></use>
+                    </svg>
+                  </span><span>Released Year</span></h3>
+                <div class="movie-details__description">
+                  <time class="h6" datetime="2022">2022</time>
+                </div>
+              </div>
+              <div class="movie-details__group">
+                <h3 class="movie-details__title"><span class="icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#translate"></use>
+                    </svg>
+                  </span><span>Available Languages</span></h3>
+                <div class="tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">English</li>
+                    <li class="tags__item">Hindi</li>
+                    <li class="tags__item">Tamil</li>
+                    <li class="tags__item">Telegu</li>
+                    <li class="tags__item">Kannada</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="movie-details__group">
+                <h3 class="movie-details__title"><span class="icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#star"></use>
+                    </svg>
+                  </span><span>Ratings</span></h3>
+                <div class="R=ratings">
+                  <ul class="ratings__list"></ul>
+                </div>
+              </div>
+              <div class="movie-details__group">
+                <h3 class="movie-details__title"><span class="icon">
+                    <svg fill="none" stroke="currentColor">
+                      <use href="/assets/images/icons.svg#genres"></use>
+                    </svg>
+                  </span><span>Genres</span></h3>
+                <div class="tags">
+                  <ul class="tags__list">
+                    <li class="tags__item">Action</li>
+                    <li class="tags__item">Adventure</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="movie-details__group">
+                <h3 class="movie-details__title">Director</h3>
+                <div class="person-card">
+                  <img srcset="/assets/images/director-57x60.jpg 57w" src="/assets/images/director-57x60.jpg" sizes="(min-width: 57px) 57px, 100vw" width="57" height="60" alt decoding="async" loading="lazy" class="person-card__image">
+                  <div class="person-card__body">
+                    <h4 class="person-card__name"> <!-- -->Rishab Shetty</h4>
+                    <p class="person-card__subtitle"> <!-- -->From India</p>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-details__group">
+                <h3 class="movie-details__title">Music</h3>
+                <div class="person-card">
+                  <img srcset="/assets/images/music-57x60.jpg 57w" src="/assets/images/music-57x60.jpg" sizes="(min-width: 57px) 57px, 100vw" width="57" height="60" alt decoding="async" loading="lazy" class="person-card__image">
+                  <div class="person-card__body">
+                    <h4 class="person-card__name"> <!-- -->B. Ajaneesh Loknath</h4>
+                    <p class="person-card__subtitle"> <!-- -->From India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <section class="banner container" aria-labelledby="banner-title">
+        <div class="banner__inner">
+          <div class="banner__body">
+            <h2 class="banner__title" id="banner-title">Start your free trial today!</h2>
+            <div class="banner__desc">
+              <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+          </div>
+          <a class="banner__btn button" href="/subscriptions"><span class="button__label">Start a Free Trail</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Home</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Categories</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Devices</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Movies</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Popular</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Support</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Subscription</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Plans</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Features</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Connect With Us</a>
+            <div class="footer__soc1als soc1als">
+              <ul class="soc1als__list">
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Facebook" aria-label="Facebook" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#facebook"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Twitter" aria-label="Twitter" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#twitter"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="LinkedIn" aria-label="LinkedIn" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#linked-in"></use>
+                      </svg>
+                    </span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer__extra">
+          <p class="footer__copyright">@2023 streamvib, All Rights Reserved</p>
+          <div class="footer__extra-links">
+            <a href="/" class="footer__extra-link">Terms of Use</a>
+            <a href="/" class="footer__extra-link">Privacy Policy</a>
+            <a href="/" class="footer__extra-link">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

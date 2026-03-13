@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Vibe | Support </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <header class="header" data-js-overlay-menu="">
+      <div class="header__inner container">
+        <a href="/" class="header__logo logo" title="Home" aria-label="Home">
+          <img src="/assets/images/Logo.svg" alt="" class="logo__image" width="199" height="60">
+        </a>
+        <dialog class="header__overlay-menu-dialog" data-js-overlay-menu-dialog="">
+          <nav class="header__menu" data-js-navigation="">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/movies" class="header__menu-link">Movies &amp; Shows</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/support" class="header__menu-link is-active">Support</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/subscriptions" class="header__menu-link">Subscriptions</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__actions">
+            <div class="search header__search" data-js-search="">
+              <button class="search__button button button--transparent" title="Search" aria-label="Search" type="button" data-js-search-button=""><span class="button__icon icon">
+                  <svg class="search__button-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <line class="search__button-icon-handle" x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                    <circle class="search__button-icon-glass" cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                    <line class="search__button-icon-x1" x1="6" y1="6" x2="18 " y2="18 " stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                    <line class="search__button-icon-x2" x1="6" y1="18 " x2="18 " y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                  </svg>
+                </span></button>
+              <div class="search__overlay" data-js-search-overlay="">
+                <search class="search__panel" role="search">
+                  <form action="/search" method="get">
+                    <div class="search__field" data-js-search-field="">
+                      <input type="search" id="search-field" placeholder="Что ищем?" required="" aria-label="Поле поиска">
+                      <button class="search__submit-button button button--transparent" title="Search" aria-label="Search" type="submit" data-js-search-submit-button=""><span class="button__icon icon">
+                          <svg class="search__button-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <line class="search__button-icon-handle" x1="17" y1="17" x2="22" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line>
+                            <circle class="search__button-icon-glass" cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+                          </svg>
+                        </span></button>
+                    </div>
+                  </form>
+                </search>
+              </div>
+            </div>
+            <div class="notifications header__notifications" data-js-notifications="">
+              <button class="notifications__button button button--transparent" title="Notifications" aria-label="Notifications" type="button" data-js-notifications-button=""><span class="button__icon icon">
+                  <svg fill="none" stroke="currentColor">
+                    <use href="/assets/images/icons.svg#notification"></use>
+                  </svg>
+                </span></button>
+              <div class="notifications__overlay" data-js-notifications-overlay="">
+                <div class="notifications__wrapper">
+                  <div class="notifications__panel">
+                    <ul class="notifications__list">
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet. sit amet. psum dolor sit amet. sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                      <li class="notifications__list-item">
+                        <a href="/" class="notifications__link"><span class="notifications__link-icon icon">
+                            <svg fill="none" stroke="currentColor">
+                              <use href="/assets/images/icons.svg#notification"></use>
+                            </svg>
+                          </span><span class="notifications__link-text">Lorem ipsum dolor sit amet.</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+        <button class="header__burger-button visible-tablet burger-button" type="button" aria-label="Open menu" title="Open menu" data-js-overlay-menu-burger-button="">
+          <svg class="burger-button__svg" width="30" height="30" viewBox="0 0 100 100">
+            <path class="burger-button__line burger-button__line--1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"></path>
+            <path class="burger-button__line burger-button__line--2" d="M 20,50 H 80"></path>
+            <path class="burger-button__line burger-button__line--3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="support container" aria-labelledby="support-title">
+        <div class="support__body">
+          <div class="support__info">
+            <h1 class="support__title h2" id="support-title">Welcome to our support page!</h1>
+            <div class="support__description">
+              <p>We&#x27;re here to help you with any problems you may be having with our product.</p>
+            </div>
+          </div>
+          <img srcset="/assets/images/1-320x285.png 320w, /assets/images/1-400x356.png 400w, /assets/images/1-533x477.png 533w" src="/assets/images/1-533x477.png" sizes="(min-width: 533px) 533px, 100vw" width="533" height="477" alt decoding="async" loading="lazy" class="support__image">
+        </div>
+        <form action="" class="support__form">
+          <div class="support__form-cell field">
+            <label for="enter-first-name" class="field__label">Enter First Name<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+            <div class="field__body">
+              <input class="field__control" id="enter-first-name" placeholder="Vlad" required="">
+            </div>
+          </div>
+          <div class="support__form-cell field">
+            <label for="enter-last-name" class="field__label">Enter Last Name<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+            <div class="field__body">
+              <input class="field__control" id="enter-last-name" placeholder="Sidorov" required="">
+            </div>
+          </div>
+          <div class="support__form-cell field">
+            <label for="email" class="field__label">Email<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+            <div class="field__body">
+              <input class="field__control" id="email" type="email" placeholder="example@example.com" required="">
+            </div>
+          </div>
+          <div class="support__form-cell field">
+            <label for="phone-number" class="field__label">Phone Number<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+            <div class="field__body">
+              <div class="select" data-js-select="">
+                <label for="phone-number-prefix" class="select__label visually-hidden" id="phone-number-prefix-label">Phone number prefix</label>
+                <select class="select__original-control field__control" id="phone-number-prefix" tabindex="-1" data-js-select-original-control="" aria-hidden="true">
+                  <option value="+7" selected="">+7</option>
+                  <option value="+1">+1</option>
+                  <option value="+2">+2</option>
+                  <option value="+3">+3</option>
+                </select>
+                <div class="select__body">
+                  <div class="select__button field__control" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-controls="phone-number-prefix-dropdown" aria-labelledby="phone-number-prefix-label" aria-activedescendant="phone-number-prefix-option-0" tabindex="0" data-js-select-button="">+7</div>
+                  <div class="select__dropdown" id="phone-number-prefix-dropdown" role="listbox" aria-labelledby="phone-number-prefix-label" data-js-select-dropdown="">
+                    <div class="select__option is-selected is-current" id="phone-number-prefix-option-0" role="option" aria-selected="true" data-js-select-option="">+7</div>
+                    <div class="select__option" id="phone-number-prefix-option-1" role="option" aria-selected="false" data-js-select-option="">+1</div>
+                    <div class="select__option" id="phone-number-prefix-option-2" role="option" aria-selected="false" data-js-select-option="">+2</div>
+                    <div class="select__option" id="phone-number-prefix-option-3" role="option" aria-selected="false" data-js-select-option="">+3</div>
+                  </div>
+                </div>
+              </div>
+              <input class="field__control" id="phone-number" placeholder="(999) 999 99-99" required="" data-js-input-mask="(000) 000-00-00">
+            </div>
+          </div>
+          <div class="support__form-cell support__form-cell--wide field">
+            <label for="message" class="field__label">Message<!-- --> <span class="field__required-star" aria-hidden="true">*</span></label>
+            <div class="field__body">
+              <textarea class="field__control" id="message" type="textarea" placeholder="Hi!...." required=""></textarea>
+            </div>
+          </div>
+          <div class="support__form-cell support__form-cell--wide support__form-cell--actions">
+            <label class="support__form-agreement checkbox" for="i-agree-with-terms-of-use-and-privacy-policy">
+              <input class="checkbox__input" type="checkbox" name="" id="i-agree-with-terms-of-use-and-privacy-policy" required=""><span class="checkbox__label">I agree with Terms of Use and Privacy Policy</span>
+            </label>
+            <button class="support__form-submit-button button" type="submit"><span class="button__label">Send Message</span></button>
+          </div>
+        </form>
+      </section>
+      <section class="section container" aria-labelledby="questions-title">
+        <header class="section__header">
+          <div class="section__info">
+            <h2 class="section__title h3" id="questions-title">Frequently Asked Questions</h2>
+            <div class="section__description">
+              <p>Got questions? We&#x27;ve got answers! Check out our FAQ section to find answers to the most common questions about StreamVibe.</p>
+            </div>
+          </div>
+          <div class="section__actions">
+            <a class="button" href="/support"><span class="button__label">Ask a Question</span></a>
+          </div>
+        </header>
+        <div class="section__body">
+          <ol class="accordion-group accordion-group--2-columns accordion-group--has-counter">
+            <li class="accordion-group__item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions" open="">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-0">What is StreamVibe?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-0" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-1">How do I sign up for StreamVibe?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-1" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-2">What is the StreamVibe free trial?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-2" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item accordion-group__item--last-column-item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-3">How much does StreamVibe cost?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-3" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-4">How do I contact StreamVibe customer support?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-4" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-5">What content is available on StreamVibe?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-5" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-6">What are the StreamVibe payment methods?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-6" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="accordion-group__item accordion-group__item--last-column-item">
+              <div class="accordion">
+                <details class="accordion__details" name="questions">
+                  <summary class="accordion__summary">
+                    <h3 class="accordion__title h5"><span role="term" aria-details="question-7">How can I watch StreamVibe?</span></h3>
+                  </summary>
+                </details>
+                <div class="accordion__content" id="question-7" role="definition">
+                  <div class="accordion__content-inner">
+                    <div class="accordion__content-body">
+                      <p>StreamVibe is a streaming service that allows you to watch movies and shows on demand. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="banner container" aria-labelledby="banner-title">
+        <div class="banner__inner">
+          <div class="banner__body">
+            <h2 class="banner__title" id="banner-title">Start your free trial today!</h2>
+            <div class="banner__desc">
+              <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+            </div>
+          </div>
+          <a class="banner__btn button" href="/subscriptions"><span class="button__label">Start a Free Trail</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <nav class="footer__menu">
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Home</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Categories</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Devices</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Movies</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Popular</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Gernes</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Trending</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">New Release</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Popular</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Support</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Subscription</a>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Plans</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="/">Features</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-column">
+            <a class="footer__menu-title h6" href="/">Connect With Us</a>
+            <div class="footer__soc1als soc1als">
+              <ul class="soc1als__list">
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Facebook" aria-label="Facebook" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#facebook"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="Twitter" aria-label="Twitter" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#twitter"></use>
+                      </svg>
+                    </span></a>
+                </li>
+                <li class="soc1als__item">
+                  <a class="soc1als__link button button--black-10" title="LinkedIn" aria-label="LinkedIn" href="/" target="_blank"><span class="button__icon icon">
+                      <svg fill="currentColor" stroke="none">
+                        <use href="/assets/images/icons.svg#linked-in"></use>
+                      </svg>
+                    </span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer__extra">
+          <p class="footer__copyright">@2023 streamvib, All Rights Reserved</p>
+          <div class="footer__extra-links">
+            <a href="/" class="footer__extra-link">Terms of Use</a>
+            <a href="/" class="footer__extra-link">Privacy Policy</a>
+            <a href="/" class="footer__extra-link">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
