@@ -1,0 +1,55 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--section-padding-y);
+
+    min-height: 100vh;
+
+    text-align: center;
+
+    @include mobile{
+        min-height: 639px;
+    }
+
+    &__pano {
+        --heroGradientColorStart: var(--color-black-08);
+        --heroGradientColorEnd: transparent 67.5%;
+
+        @include flex-center;
+
+        flex-grow: 1;
+        padding-top: fluid(195, 150);
+        padding-bottom: fluid(131, 50);
+        background:
+        linear-gradient(
+            to bottom,
+            var(--heroGradientColorStart),
+            var(--heroGradientColorEnd)
+        ),
+        linear-gradient(
+            to top,
+            var(--heroGradientColorStart),
+            var(--heroGradientColorEnd)
+        ),
+        url('@/assets/images/hero/bg.png') 50%/cover;
+  }
+
+
+    &__play-button{
+        @include square(fluid(470, 200));
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+    &__title{
+        margin-top: -0.5em;
+        margin-bottom: fluid-to-laptop(14,10);
+    }
+    &__description{
+        margin-bottom: fluid(50,30);
+    }
+
+    &__body{
+        padding-bottom: fluid(50, 20);
+    }
+}

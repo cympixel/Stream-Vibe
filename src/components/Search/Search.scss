@@ -1,0 +1,139 @@
+.search {
+  position: relative;
+  &__button{
+
+    &-icon {
+   
+     &-x1, &-x2 {
+      opacity: 0;
+      transition: opacity 0.2s ease, transform 0.3s ease;
+      transform-origin: 50%;
+      transform:scale(0.4);
+    }
+    &-handle {
+        transform-origin: 17px 17px;
+        transition: opacity 0.3s ease, transform 0.4s ease;
+      }
+    
+      
+    &-glass {
+      transition: opacity 0.3s ease, transform 0.4s ease;
+    }
+     
+    
+    
+  }
+  
+  &.active &-icon{
+   
+      &-handle {
+        transform: scale(0.4);
+        transform-origin: 17px 17px;
+        opacity: 0;
+      }
+    
+      
+      &-glass {
+        opacity: 0;
+        transform: scale(0.4);
+      }
+
+    
+      
+      &-x1,
+      &-x2{
+        opacity: 1;
+        transform:scale(1);
+      }
+  }
+
+
+  }
+
+  &__overlay {
+    position: absolute;
+    top: -5px;
+    right: 54px;
+    z-index: 12;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.38s ease, visibility 0s linear 0.38s;
+
+    @include tablet{
+      right: unset;
+      left: 54px;
+    }
+      
+    
+      &.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity 0.38s ease, visibility 0s linear 0s;
+        
+        .search__panel {
+          transform: scale(1) translateX(0);
+          opacity: 1;
+        }
+      }
+  }
+  
+
+  &__panel {
+    position: relative;
+    width: fluid(400, 200);
+    border-radius: 16px;
+    
+ 
+    transform: scale(0.92) translateX(30px);
+    opacity: 0;
+    transition: all 0.48s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    
+    &__field {
+      position: relative;
+
+
+      & input{
+        outline: none;
+        width: 100%;
+        height: 56px;
+        padding: 10px 30px;
+        font-size: 15px;
+        background: var(--color-black-08);
+        border: var(--border);
+        border-radius:var(--border-radius-s);
+        color: white;
+        transition: var(--transition-duration);
+
+        &:hover,  &:focus{
+           background: var(--color-black-10);
+        }
+        
+      }
+    }
+    &__submit-button {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+
+      &:active {
+        transform: translateY(-50%) scale(0.94);
+      }
+    }
+  
+}
+
+
+
+
+
+
+

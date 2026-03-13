@@ -1,0 +1,57 @@
+
+.tabs-navigation {
+  --tabsButtonPadding:#{fluid-to-laptop(10, 8)};
+
+  
+  position: relative;
+  display: var(--tabsNavigationDisplay, flex);
+  padding: var(--tabsButtonPadding);
+  border: var(--border);
+  border-radius: var(--border-radius-m);
+
+  @include laptop {
+    border-radius: var(--border-radius-s);
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: var(--tabsButtonPadding);
+    left: 0;
+    width: var(--tabsActiveButtonWidth);
+    height: calc(100% - var(--tabsButtonPadding)*2);
+    background-color: var(--color-black-12);
+    border-radius: var(--border-radius-m);
+    transition-duration: var(--transition-duration);
+    translate: var(--tabsActiveButtonOffsetLeft);
+
+    @include laptop{
+      border-radius: var(--border-radius-xs);
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    justify-content: center;
+    flex-grow: 1;
+    position: relative;
+    padding: fluid-to-laptop(14, 12) fluid-to-laptop(24, 20);
+    border-radius: var(--border-radius-m);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+    user-select: none;
+
+    @include laptop {
+      border-radius: var(--border-radius-xs);
+    }
+
+    @include hover {
+      color: var(--color-white);
+    }
+
+    &.is-active {
+      color: var(--color-white);
+      pointer-events: none;
+    }
+  }
+}
