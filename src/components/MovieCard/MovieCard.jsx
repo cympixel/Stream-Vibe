@@ -2,9 +2,12 @@ import Badge from '../Badge';
 import './MovieCard.scss';
 import { Image } from 'minista';
 import RatingView from '../RatingView';
+import basePath from '@/constants/Path';
+
+
 export default (props) => {
   const {
-    title, imgSrc, duration, views, href ='/movie', released, rating, season
+    title, imgSrc, duration, views, href =`${basePath}/movie`, released, rating, season
   } = props
   return (
     <a 

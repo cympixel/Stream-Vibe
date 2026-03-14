@@ -37,12 +37,14 @@
   &__inner {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 16px;
+    
     @include tablet{
       display: flex;
       justify-content: space-between;
     }
-    align-items: center;
-    column-gap: 16px;
+    
   }
 
   &__overlay-menu-dialog {

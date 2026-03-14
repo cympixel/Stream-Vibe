@@ -11,7 +11,9 @@
     }
  
   &__group{
-   
+    display: grid;
+    row-gap: fluid(100, 75);
+
   @include mobile-above{
         position: relative;
         padding: var(--collectionsGroupPadding);
@@ -19,9 +21,6 @@
         border-radius: var(--border-radius-l); 
     }
 
-    display: grid;
-    row-gap: fluid(100, 75);
-    
   }
 
   &__title{

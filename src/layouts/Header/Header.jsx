@@ -5,26 +5,29 @@ import Button from '@/components/Button'
 import BurgerButton from '@/components/BurgerButton'
 import Search from '@/components/Search'
 import Notifications from '@/components/Notifications'
+import basePath from '@/constants/Path'
 
 export default  (props) => {
+    
+    
     const{url, isFixed}=props
 
     const menuItems = [
         {
             label:'Home',
-            href:'/'
+            href:`${basePath}/`
         },
          {
             label:'Movies & Shows',
-            href:'/movies'
+            href:`${basePath}/movies`
         },
          {
             label:'Support',
-            href:'/support'
+            href:`${basePath}/support`
         },
          {
             label:'Subscriptions',
-            href:'/subscriptions'
+            href:`${basePath}/subscriptions`
         },
         
     ]

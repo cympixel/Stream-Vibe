@@ -2,13 +2,17 @@ import { Image } from 'minista';
 import './CategoryCard.scss';
 import Icon from '../Icon';
 import Badge from '../Badge';
+import basePath from '@/constants/Path';
+
 
 export default (props) => {
   
   const{title, images = [], badge} = props
 
+  const href = `${basePath}/movies`
+
   return (
-    <a href="/movies" className="category-card">
+    <a href={href} className="category-card">
       <div className="category-card__images">
         {images.map((imgSrc, index)=>(
           <Image 

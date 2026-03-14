@@ -1,17 +1,21 @@
 {
   "name": "minista-project",
   "private": true,
+  "homepage": "https://cympixel.github.io/Sream-Vibe",
   "type": "module",
   "scripts": {
     "start": "minista",
     "build": "minista build",
     "preview": "minista preview",
-    "component": "plop component"
+    "component": "plop component",
+    "deploy":"npm run build && gh-pages -d dist"
+
   },
   "prettier": {
     "semi": false
   },
   "devDependencies": {
+    "gh-pages": "6.3.0",
     "minista": "^3.1.12",
     "plop": "^4.0.4",
     "postcss-preset-env": "^11.2.0",
