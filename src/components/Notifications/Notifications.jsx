@@ -82,7 +82,7 @@ export default (props) => {
               {
                 notificationsItems && notificationsItems.map((notificationsItem, index)=>(
                   <li className="notifications__list-item" key={index}>               
-                    <a href="/" className="notifications__link">
+                    <a href="" className="notifications__link">
                       <Icon className='notifications__link-icon' name='notification'/>
                       <span className="notifications__link-text">
                         {notificationsItem.label}

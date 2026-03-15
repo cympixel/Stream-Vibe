@@ -1,5 +1,6 @@
 import './PlanCard.scss';
 import Button from '../Button';
+import basePath from '@/constants/Path';
 
 export default (props) => {
   const{title, description, price} = props
@@ -24,12 +25,12 @@ export default (props) => {
       <div className="plan-card__actions">
         <Button
           label='Start Free Trial'
-          href='/subscriptions'
+          href={`${basePath}/subscriptions`}
           mode='black-08'
        />
        <Button
           label='Choose Plan'
-          href='/subscriptions'
+          href={`${basePath}/subscriptions`}
        />
       </div>
     </div>

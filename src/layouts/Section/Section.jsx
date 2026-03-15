@@ -10,12 +10,14 @@ export default (props) => {
     actions, 
     actionHidden=false,
     description, 
-    children} = props
+    children,
+    id} = props
 
   return (
     <section 
     className={classNames(className, 'section container')}
     aria-labelledby={titleId}
+    id={id}
     >
       <header className="section__header">
         <div className="section__info">

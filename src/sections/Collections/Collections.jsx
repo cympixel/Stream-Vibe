@@ -27,7 +27,8 @@ export default () => {
                 title,
                 categoryItems,
                 movieItems,
-                sliderParams
+                sliderParams,
+                id
               } = collectionItem
 
               const titleFormatted = `${getIdFromTitle(collectionGroup.title)}-${getIdFromTitle(title)}`
@@ -37,6 +38,7 @@ export default () => {
               return(
                 <Section
                 className="collections__section"
+                id={id}
                 title={title}
                 titleId={titleId}
                 actions={(

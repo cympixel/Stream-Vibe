@@ -8,7 +8,7 @@ import Select from '@/components/Select';
 export default () => {
   const titleId = 'support-title'
   return (
-    <section className="support container" aria-labelledby={titleId}>
+    <section id='contact-us' className="support container" aria-labelledby={titleId}>
       <div className="support__body">
         <div className="support__info">
           <h1 className="support__title h2" id={titleId}>

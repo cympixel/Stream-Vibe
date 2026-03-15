@@ -9,7 +9,7 @@ export default function () {
   return (
     <>
         <Support/>
-        <Questions/>
+        <Questions onSupportPage={true}/>
     </>
    
   )

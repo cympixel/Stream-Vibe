@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import './Socials.scss';
 import Button from '../Button';
+import basePath from '@/constants/Path';
 export default (props) => {
   const{
     className, 
@@ -14,7 +15,7 @@ export default (props) => {
           <li className="soc1als__item" key={index}>
             <Button 
             mode='black-10' 
-            href='/' 
+            href={`${basePath}`} 
             className='soc1als__link' 
             target='_blank'
             label={label}

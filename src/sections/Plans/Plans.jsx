@@ -11,6 +11,7 @@ export default () => {
 
   return (
     <Section
+      id="plans"
       title="Choose the plan that's right for you"
       titleId="plans-id"
       description="Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!"

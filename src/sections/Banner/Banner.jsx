@@ -1,5 +1,7 @@
+import basePath from '@/constants/Path';
 import './Banner.scss';
 import Button from '@/components/Button';
+
 
 export default () => {
   const titleId = 'banner-title'
@@ -15,7 +17,7 @@ export default () => {
               <p>This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
             </div>
         </div>
-        <Button className='banner__btn' label='Start a Free Trail' href='/subscriptions'/>
+        <Button className='banner__btn' label='Start a Free Trail' href={`${basePath}/subscriptions`}/>
       </div>
     </section>
   )

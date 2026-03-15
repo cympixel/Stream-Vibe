@@ -1,4 +1,5 @@
 import categoryItems from "../Categories/categoryItems"
+import basePath from "@/constants/Path"
 
 const collectionGroup = [
     {
@@ -7,10 +8,12 @@ const collectionGroup = [
         items:[
             {
                 title:'Our Genres',
+                id:'genres-movies',
                 categoryItems
             },
             {
                 title:'Popular Top 10 In Genres',
+                id:'popular-movies',
                 sliderParams:{
                     // От 0 и до следующего брекпоинта
                     slidesPerView: 1.6,
@@ -51,206 +54,128 @@ const collectionGroup = [
                     title:'Action',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
                     ]
                     },
                     {
                     title:'Adventure',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
                     ]
                     },
                     {
                     title:'Comedy',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
                     ]
                     },
                     {
                     title:'Drama',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
                     ]
                     },
                     {
                     title:'Action',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
                     ]
                     },
                     {
                     title:'Adventure',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
                     ]
                     },
                     {
                     title:'Comedy',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
                     ]
                     },
                     {
                     title:'Drama',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
                     ]
                     },
                     {
                     title:'Action',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
                     ]
                     },
                     {
                     title:'Adventure',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
                     ]
                     },
                     {
                     title:'Comedy',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
                     ]
                     },
                     {
                     title:'Drama',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
                     ]
                     },
-                    {
-                    title:'Action',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Adventure',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Comedy',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Drama',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Action',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Adventure',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Comedy',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Drama',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
-                    ]
-                    },
+                    
                 ]
             },
             {
                 title:'Trending Now',   
+                id:'trending-movies',
                 movieItems:[
                     {
                         title:'Morbius',
@@ -366,6 +291,7 @@ const collectionGroup = [
             },
             {
                 title:'New Releases',
+                id:'new-release-movies',
                 movieItems:[
                     {
                         title:'Morbius',
@@ -664,10 +590,12 @@ const collectionGroup = [
         items:[
             {
                 title:'Our Show Genres',
+                id:'genres-shows',                
                 categoryItems
             },
             {
                 title:'Popular Top 10 In Show Genres',
+                id:'popular-shows',
                 sliderParams:{
                     // От 0 и до следующего брекпоинта
                     slidesPerView: 1.6,
@@ -708,318 +636,278 @@ const collectionGroup = [
                     title:'Action',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
                     ]
                     },
                     {
                     title:'Adventure',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
                     ]
                     },
                     {
                     title:'Comedy',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
                     ]
                     },
                     {
                     title:'Drama',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
                     ]
                     },
                     {
                     title:'Action',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
                     ]
                     },
                     {
                     title:'Adventure',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
                     ]
                     },
                     {
                     title:'Comedy',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
                     ]
                     },
                     {
                     title:'Drama',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
+                    ]
+                    },{
+                    title:'Action',
+                    badge:"Top 10 In",
+                    images:[
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
+                    ]
+                    },
+                    {
+                    title:'Adventure',
+                    badge:"Top 10 In",
+                    images:[
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
+                    ]
+                    },
+                    {
+                    title:'Comedy',
+                    badge:"Top 10 In",
+                    images:[
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
+                    ]
+                    },
+                    {
+                    title:'Drama',
+                    badge:"Top 10 In",
+                    images:[
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
                     ]
                     },
                     {
                     title:'Action',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
+                        '/src/assets/images/categories/action/1-action.jpg',
+                        '/src/assets/images/categories/action/2-action.jpg',
+                        '/src/assets/images/categories/action/3-action.jpg',
+                        '/src/assets/images/categories/action/4-action.jpg'  
                     ]
                     },
                     {
                     title:'Adventure',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
+                        '/src/assets/images/categories/adventure/1-adv.jpg',
+                        '/src/assets/images/categories/adventure/2-adv.jpg',
+                        '/src/assets/images/categories/adventure/3-adv.jpg',
+                        '/src/assets/images/categories/adventure/4-adv.jpg'  
                     ]
                     },
                     {
                     title:'Comedy',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
+                        '/src/assets/images/categories/comedy/1-comedy.jpg',
+                        '/src/assets/images/categories/comedy/2-comedy.jpg',
+                        '/src/assets/images/categories/comedy/3-comedy.jpg',
+                        '/src/assets/images/categories/comedy/4-comedy.jpg'  
                     ]
                     },
                     {
                     title:'Drama',
                     badge:"Top 10 In",
                     images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Action',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Adventure',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Comedy',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Drama',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Action',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/action/1.jpg',
-                        '/src/assets/images/categories/action/2.jpg',
-                        '/src/assets/images/categories/action/3.jpg',
-                        '/src/assets/images/categories/action/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Adventure',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/adventure/1.jpg',
-                        '/src/assets/images/categories/adventure/2.jpg',
-                        '/src/assets/images/categories/adventure/3.jpg',
-                        '/src/assets/images/categories/adventure/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Comedy',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/comedy/1.jpg',
-                        '/src/assets/images/categories/comedy/2.jpg',
-                        '/src/assets/images/categories/comedy/3.jpg',
-                        '/src/assets/images/categories/comedy/4.jpg'  
-                    ]
-                    },
-                    {
-                    title:'Drama',
-                    badge:"Top 10 In",
-                    images:[
-                        '/src/assets/images/categories/drama/1.jpg',
-                        '/src/assets/images/categories/drama/2.jpg',
-                        '/src/assets/images/categories/drama/3.jpg',
-                        '/src/assets/images/categories/drama/4.jpg'  
+                        '/src/assets/images/categories/drama/1-drama.jpg',
+                        '/src/assets/images/categories/drama/2-drama.jpg',
+                        '/src/assets/images/categories/drama/3-drama.jpg',
+                        '/src/assets/images/categories/drama/4-drama.jpg'  
                     ]
                     },
                 ]
             },
             {
                 title:'Trending Shows Now',
+                id:'trending-shows',
                 movieItems:[
                     {
                         title:'Stranger Things',
                         imgSrc:'/src/assets/images/shows/trending/1.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Money Heist',
                         imgSrc:'/src/assets/images/shows/trending/2.jpg',
                         duration:'12h 30min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Lucifer',
                         imgSrc:'/src/assets/images/shows/trending/3.jpg',
                         duration:'14h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/trending/4.jpg',
                         duration:'7h 30min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                       {
                         title:'Stranger Things',
                         imgSrc:'/src/assets/images/shows/trending/1.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Money Heist',
                         imgSrc:'/src/assets/images/shows/trending/2.jpg',
                         duration:'12h 30min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Lucifer',
                         imgSrc:'/src/assets/images/shows/trending/3.jpg',
                         duration:'14h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/trending/4.jpg',
                         duration:'7h 30min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                       {
                         title:'Stranger Things',
                         imgSrc:'/src/assets/images/shows/trending/1.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Money Heist',
                         imgSrc:'/src/assets/images/shows/trending/2.jpg',
                         duration:'12h 30min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Lucifer',
                         imgSrc:'/src/assets/images/shows/trending/3.jpg',
                         duration:'14h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/trending/4.jpg',
                         duration:'7h 30min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                       {
                         title:'Stranger Things',
                         imgSrc:'/src/assets/images/shows/trending/1.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Money Heist',
                         imgSrc:'/src/assets/images/shows/trending/2.jpg',
                         duration:'12h 30min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'Lucifer',
                         imgSrc:'/src/assets/images/shows/trending/3.jpg',
                         duration:'14h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/trending/4.jpg',
                         duration:'7h 30min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     
                 ],
@@ -1061,90 +949,91 @@ const collectionGroup = [
             },
             {
                 title:'New Released Shows',
+                id:'new-release-shows',
                 movieItems:[
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/1.jpg',
                         duration:'12h 23min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/2.jpg',
                         duration:'7h 40min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/3.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/4.jpg',
                         duration:'10h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/1.jpg',
                         duration:'12h 23min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/2.jpg',
                         duration:'7h 40min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/3.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/4.jpg',
                         duration:'10h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/1.jpg',
                         duration:'12h 23min',
                         season:'5 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/2.jpg',
                         duration:'7h 40min',
                         season:'2 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/3.jpg',
                         duration:'8h 20min',
                         season:'4 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
                         imgSrc:'/src/assets/images/shows/new/4.jpg',
                         duration:'10h 30min',
                         season:'3 Season',
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                 ],
                 sliderParams:{
@@ -1185,6 +1074,7 @@ const collectionGroup = [
             },
             {
                 title:'Must - Watch Shows',
+
                 movieItems:[
                     {
                         title:'The Gray Man',
@@ -1194,7 +1084,7 @@ const collectionGroup = [
                             value:4.5,
                             label:'20K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1204,7 +1094,7 @@ const collectionGroup = [
                             value:5,
                             label:'203K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1214,7 +1104,7 @@ const collectionGroup = [
                             value:4,
                             label:'22K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1224,7 +1114,7 @@ const collectionGroup = [
                             value:5,
                             label:'230K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1234,7 +1124,7 @@ const collectionGroup = [
                             value:4.5,
                             label:'20K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1244,7 +1134,7 @@ const collectionGroup = [
                             value:5,
                             label:'203K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1254,7 +1144,7 @@ const collectionGroup = [
                             value:4,
                             label:'22K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1264,7 +1154,7 @@ const collectionGroup = [
                             value:5,
                             label:'230K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1274,7 +1164,7 @@ const collectionGroup = [
                             value:4.5,
                             label:'20K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1284,7 +1174,7 @@ const collectionGroup = [
                             value:5,
                             label:'203K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1294,7 +1184,7 @@ const collectionGroup = [
                             value:4,
                             label:'22K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1304,7 +1194,7 @@ const collectionGroup = [
                             value:5,
                             label:'230K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1314,7 +1204,7 @@ const collectionGroup = [
                             value:4.5,
                             label:'20K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1324,7 +1214,7 @@ const collectionGroup = [
                             value:5,
                             label:'203K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1334,7 +1224,7 @@ const collectionGroup = [
                             value:4,
                             label:'22K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                     {
                         title:'The Gray Man',
@@ -1344,7 +1234,7 @@ const collectionGroup = [
                             value:5,
                             label:'230K'
                         },
-                        href:'/show'
+                        href:`${basePath}/show`
                     },
                 ],
                 sliderParams:{
