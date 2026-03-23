@@ -1,0 +1,59 @@
+.video-player {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-player__video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Скрываем кастомную кнопку, когда видео играет */
+.video-player__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: 40;
+}
+
+.video-player__play-overlay.is-active {
+  opacity: 1;
+}
+
+/* Панель управления снизу */
+.video-player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 10px;
+  display: flex;
+  
+}
+
+.video-player__timeline-container {
+  height: 4px;
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: height 0.1s;
+}
+
+.video-player__timeline-container:hover {
+  height: 8px;
+}
+
+.video-player__timeline-progress {
+  height: 100%;
+  background: red; /* Фирменный цвет YouTube */
+  width: 0;
+}
+.video-player__buttons{
+    display: flex;
+}
