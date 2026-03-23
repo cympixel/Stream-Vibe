@@ -88,6 +88,7 @@ class VideoPlayer {
   }
   onKeyFKeyDown  = () => {
     if (document.fullscreenElement) {
+      this.videoElement.controls = false
       document.exitFullscreen();
     } 
     else {
