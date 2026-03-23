@@ -18,30 +18,91 @@ class VideoPlayer {
     this.bindEvents()
   }
 
-  onPlayButtonClick = () => {
-    this.videoElement.play()
-    this.videoElement.requestFullscreen()
-    this.videoElement.controls = true
-    this.playButtonElement.classList.remove(this.stateClasses.isActive)
+  onClick = () => {
+  this.videoElement.requestFullscreen()
+  this.videoElement.controls = true
+    if (this.videoElement.paused) {
+      this.videoElement.play();
+    } else {
+      this.videoElement.pause();
+    }
+    this.playButtonElement.classList.toggle(this.stateClasses.isActive)
+    this.rootElement.focus()
   }
 
+  onVideoPlay= () => {
+    this.playButtonElement.classList.remove(this.stateClasses.isActive)
+  }
   onVideoPause = () => {
-    this.videoElement.controls = false
     this.playButtonElement.classList.add(this.stateClasses.isActive)
   }
 
   onVideoFullScreenChange = () => {
+
     const isFullScreenEnabled = document.fullscreenElement === this.videoElement
 
+
+
     if (!isFullScreenEnabled) {
+
       this.videoElement.pause()
+
     }
+
   }
 
+  onKeyDown = (event) => {
+        const { code } = event
+
+        const isFullScreen = document.fullscreenElement === this.videoElement
+
+        
+        if (!isFullScreen && document.activeElement !== this.rootElement && document.activeElement !== this.videoElement) {
+          return
+        }
+        
+        const action = {
+        ArrowRight: this.onArrowRightKeyDown,
+        ArrowLeft: this.onArrowLeftKeyDown,
+        Space: this.onSpaceKeyDown,
+        KeyF: this.onKeyFKeyDown,
+        }[code]
+
+        if (action) {
+        event.preventDefault()
+        action()
+        }
+  }
+  onArrowLeftKeyDown = () => {
+    this.videoElement.currentTime -= 5
+  }
+  onArrowRightKeyDown = () => {
+    this.videoElement.currentTime += 5
+  }
+  onSpaceKeyDown = () => {
+    if (this.videoElement.paused) { 
+      this.videoElement.play();
+    } else {
+      this.videoElement.pause();
+    }
+  }
+  onKeyFKeyDown  = () => {
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+    } 
+    else {
+      this.videoElement.requestFullscreen()
+    }
+  }
+  
+
+
   bindEvents() {
-    this.playButtonElement.addEventListener('click', this.onPlayButtonClick)
+    this.rootElement.addEventListener('click', this.onClick)
     this.videoElement.addEventListener('pause', this.onVideoPause)
+    this.videoElement.addEventListener('play', this.onVideoPlay)
     this.videoElement.addEventListener('fullscreenchange', this.onVideoFullScreenChange)
+    document.addEventListener('keydown', this.onKeyDown)
   }
 }
 
