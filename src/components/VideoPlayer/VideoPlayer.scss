@@ -1,59 +1,307 @@
 .video-player {
   position: relative;
+  border: var(--border);
+  border-radius: var(--border-radius-l);
   overflow: hidden;
-  background: #000;
-}
-
-.video-player__video {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-/* Скрываем кастомную кнопку, когда видео играет */
-.video-player__play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.2s;
-  z-index: 40;
-}
-
-.video-player__play-overlay.is-active {
-  opacity: 1;
-}
-
-/* Панель управления снизу */
-.video-player__controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.7));
-  padding: 10px;
-  display: flex;
-  
-}
-
-.video-player__timeline-container {
-  height: 4px;
-  background: rgba(255,255,255,0.3);
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  width: 172px;
+  height: 118px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  margin-bottom: 8px;
-  transition: height 0.1s;
-}
+  
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  }
 
-.video-player__timeline-container:hover {
-  height: 8px;
-}
+  @include mobile{
+    width: 100%;
+    height: auto;
+  }
 
-.video-player__timeline-progress {
-  height: 100%;
-  background: red; /* Фирменный цвет YouTube */
-  width: 0;
-}
-.video-player__buttons{
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+
+  &__play-button {
+    @include abs-center;
+    @include flex-center;
+    @include square(50px);
+  
+    padding: 0;
+    color: var(--color-white);
+    background-color: color-mix(in srgb, var(--color-black) 60%, transparent);
+    border: none;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 40;
+
+    @include hover {
+      background-color: var(--color-red-60);
+    }
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+
+
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 14px;
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    z-index: 30;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+
+
+    &.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+
+  &:fullscreen  {
+
+    .video-player__controls{
+      padding: 20px 28px;
+      gap: 10px;
+    }
+    .video-player__timeline-container {
+      height: 8px;
+    }
+    .video-player__timeline-container:hover {
+      height: 12px;
+    }
+    .video-player__buttons{
+      padding-inline: 10px;
+
+
+      &-left-side{
+      gap: 30px;
+      }
+      &-right-side{
+        gap: 50px;
+      }
+      }
+
+    .video-player__play-pause-button{
+      @include square(28px);
+
+      &-icon{
+        --iconSize:28px;
+      }
+    }
+    .video-player__fullsreen-button{
+      @include square(26px);
+
+      &-icon{
+        --iconSize:26px;
+      }
+    }
+   
+
+    .video-player__time { font-size: 15px; }
+
+    .video-player__volume {
+    width: 140px;
+  }
+
+    .video-player__volume::-webkit-slider-runnable-track,
+    .video-player__volume::-moz-range-track {
+    height: 6px;
+  }
+
+    .video-player__volume::-webkit-slider-thumb,
+    .video-player__volume::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    margin-top: -5px;
+  }
+
+  }
+
+
+  
+  &__timeline-container {
+    height: 5px;
+    background: rgba(255,255,255,0.25);
+    cursor: pointer;
+    border-radius: 9999px;
+    transition: height 0.2s ease;
+    width: 100%;
+    position: relative;
+
+    &::after{
+        position: absolute;
+    }
+
+    &:hover {
+      height: 8px;
+    }
+  }
+
+
+  &__timeline-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #e50914;
+    border-radius: 9999px;
+    width: 0;
+    transition: width 0.1s linear;
+  }
+
+  
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    
+
+    &-left-side,&-right-side{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+
+  &__volume {
+    width: 20px;
+    accent-color: #e50914;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+
+
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track {
+      background: rgba(255,255,255,0.35);
+      height: 3px;
+      border-radius: 9999px;
+    }
+  
+    &::-webkit-slider-thumb,
+    &::-moz-range-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 10px;
+      height: 10px;
+      background: #ffffff;
+      border-radius: 50%;
+      border: 1.5px solid #e50914;
+      box-shadow: 0 0 4px rgba(0,0,0,0.6);
+    }
+  
+    &::-webkit-slider-thumb {
+      margin-top: -3.5px;
+    }
+  
+    &:hover::-webkit-slider-thumb {
+      transform: scale(1.2);
+    }
+  }
+
+
+  &__time {
+    display: flex;
+    font-size: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #fff;
+  }
+
+  &__play-pause-button {
+    @include flex-center;
+    @include square(22px);
+    border-radius: 50%;
+    padding: 0;
+    color: var(--color-white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    position: relative;
+
+    &-icon{
+      position: absolute;
+      --iconSize:22px;
+
+      &--play{
+        animation: keyframes-fill 0.3s;
+      }
+      &--pause{
+        animation: keyframes-fill 0.3s;
+        display: none;
+      }
+
+
+      @keyframes keyframes-fill {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        50% {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &.is-active{
+      .video-player__play-pause-button-icon{
+        &--play{
+          display: none;
+        }
+        &--pause{
+          display: block;       
+        }
+
+      }
+    }
+    
+    &:hover {
+      color:var(--color-red-90)
+    }
+  }
+
+  &__fullsreen-button{
+    @include flex-center;
+    @include square(16px);
+    color: var(--color-white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    
+    position: relative;
+
+    &-icon{
+      position: absolute;
+      --iconSize:22px;
+    }
+
+  }
+
 }
