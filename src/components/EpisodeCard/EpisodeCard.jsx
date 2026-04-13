@@ -6,12 +6,14 @@ import VideoPlayer from '../VideoPlayer';
 
 export default (props) => {
   const{number, title , description, duration} = props
+
+ 
   return (
     <div className="episode-card">
         <div className="episode-card__number">
           {number}
         </div>
-        <VideoPlayer videoSrc='src/assets/videos/example.mp4' poster='src/assets/images/video-posters/1.jpg'/>
+        <VideoPlayer videoSrc='src/assets/videos/example.mp4' poster='src/assets/images/movie-banner/3.jpg'/>
         <div className="episode-card__body">
           <div className="episode-card__info">
             <h4 className="episode-card__title h6">{title}</h4>

@@ -4,7 +4,7 @@
   "homepage": "https://cympixel.github.io/Sream-Vibe",
   "type": "module",
   "scripts": {
-    "start": "minista",
+    "start": "minista --host",
     "build": "minista build",
     "preview": "minista preview",
     "component": "plop component",

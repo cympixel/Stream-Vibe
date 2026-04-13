@@ -7,7 +7,7 @@ import ReviewCard from '@/components/ReviewCard';
 import Icon from '@/components/Icon';
 import Tags from '@/components/Tags';
 import Ratings from '@/components/Ratings';
-import Seasons from '@/components/Seasons';
+
 
 export default (props) => {
   const {seasons} = props

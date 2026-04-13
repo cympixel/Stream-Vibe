@@ -1,7 +1,7 @@
 import './Hero.scss'
 import Button from '@/components/Button';
 import playImgSrc from '@/assets/images/play.svg'
-
+import basePath from '@/constants/Path';
 
 export default () => {
   return (
@@ -35,6 +35,7 @@ export default () => {
             className='hero__button' 
             iconName='play'
             label='Start Watching Now'
+            href={ `${basePath}/movies`}
             hasFillIcon/>
           </div>
         </div>
