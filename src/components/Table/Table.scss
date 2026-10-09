@@ -1,0 +1,42 @@
+table {
+--tableBorderWidth: var(--border-width-s);
+--tableBorderColor: var(--color-black-15);
+--tableBorder: var(--tableBorderWidth) solid var(--tableBorderColor);
+
+  width: 100%;
+  border-radius: var(--border-radius-l);
+  box-shadow: 0 0 0 var(--tableBorderWidth) var(--tableBorderColor);
+  overflow: hidden;
+
+  @include laptop{
+    border-radius: var(--border-radius-m);
+  }
+
+  thead{
+    background-color: var(--color-black-06);
+  }
+
+  tbody{
+    tr:last-child{
+        td{
+            border-bottom: none;
+        }
+    }
+  }
+
+  th,td{
+    padding: fluid-to-laptop(30, 24);
+    border-bottom: var(--tableBorder);  
+
+    &:not(:last-child){
+        border-right: var(--tableBorder);
+    }
+  }
+
+  th{
+    font-size: fluid-to-laptop(20, 18);
+    font-weight: 600;
+    color: var(--color-white);
+    text-align: left;
+  }
+}

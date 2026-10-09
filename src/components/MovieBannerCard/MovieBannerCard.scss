@@ -1,0 +1,62 @@
+.movie-banner-card{
+    position: relative;
+    text-align: center;
+  
+    border-radius: var(--border-radius-l);
+    overflow: hidden;
+    
+    &__image{
+        width: 100%;
+        min-height: fluid(835, 468);
+        object-fit: cover;    
+    }
+
+    &__inner{
+        @include abs-cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        row-gap: fluid(30, 20);
+        padding: fluid-to-laptop(126, 104) fluid(50, 24);
+        background-image: linear-gradient(0deg, var(--color-black-08) 0%, rgba(20, 20, 20, 0.00) 100%);
+        
+
+        @include mobile{
+            padding-block: 16px;
+        }
+
+        &--small-padding-y{
+            padding-block: fluid-to-laptop(20, 16);
+        }
+    }
+
+    &__body{
+        display: grid;
+        gap: 4px;
+    }
+
+    &__desc{
+        max-width: fluid-to-laptop(1254, 968);
+    }
+    &__footer{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        
+        @include mobile{
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    &__play-btn{
+        @include mobile-s{
+            width: 100%;
+        }
+    }
+
+    &__actions{
+        display: flex;
+        gap: 8px;
+    }
+}

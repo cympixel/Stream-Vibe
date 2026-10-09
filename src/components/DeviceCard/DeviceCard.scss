@@ -1,0 +1,38 @@
+.device-card {
+  display: grid;
+  row-gap: fluid(30, 20);
+  padding: fluid(50, 24);
+  border: var(--border);
+  border-radius: var(--border-radius-l);
+  background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+
+  @include laptop{
+    border-radius: var(--border-radius-m);
+  }
+
+  &__header{
+    display: flex;
+    align-items: center;
+    gap: fluid(16, 10);
+  }
+  &__wrapper{
+    @include flex-center;
+    @include square(fluid(72, 44));
+
+    background-color: var(--color-black-08);
+    border: var(--border-radius-s) solid var(--color-black-12);
+    border-radius: var(--border-radius-l);
+
+   @include laptop{
+    border-radius: var(--border-radius-m);
+  }
+   @include mobile{
+    border-radius: var(--border-radius-s);
+  }
+  }
+
+  &__image{
+    width: 55%;
+    object-fit: contain;
+  }
+}

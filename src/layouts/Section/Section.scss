@@ -1,0 +1,33 @@
+.section {
+  display: grid;
+  row-gap: fluid(80, 40);
+  padding-block: var(--section-padding-y);
+
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+    align-items: center;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: start;
+        row-gap: 20px;
+    }
+    @include mobile-above{
+
+        &:has(.section__description){
+            align-items: end;
+      }
+    }
+
+  }
+  &__info{
+    display: grid;
+    row-gap: fluid-to-laptop(14, 10);
+  }
+
+  &__description{
+    max-width: 1300px;
+  }
+}

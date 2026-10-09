@@ -1,0 +1,32 @@
+.banner {
+    padding-block: var(--section-padding-y);
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 100px;
+        padding: fluid(100, 50) fluid(80, 30);
+        background:linear-gradient(90deg, var(--color-black-06) 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%),  url(../../assets/images/banner/bg.png) center/cover no-repeat ;
+        border: var(--border);
+        border-radius: var(--border-radius-l); 
+
+        @include tablet{
+            flex-direction: column;
+            row-gap: 50px;
+            text-align: center;
+        }
+
+        @include mobile-s{
+            background: url(../../assets/images/banner/bg-mobile.png) center/cover no-repeat ;
+        }
+    }
+    &__body{
+        display: grid;
+        row-gap: fluid-to-laptop(14, 10);
+    }
+    &__button{
+        flex-shrink: 0;
+    }
+
+}

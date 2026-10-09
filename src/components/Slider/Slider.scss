@@ -1,0 +1,39 @@
+.slider {
+  position: relative;
+  
+  user-select: none;
+  
+  &__swiper{
+    padding: 1px;
+  }
+  &--beyond-the-viewport-on-mobile-s{
+    @include mobile-s{
+        width: calc(100vw - 39px);
+    }
+  }
+
+  &__scrollbar{
+    @include abs-x;
+    top: calc(100% + 24px);
+    width: 80px;
+    height: 5px;
+    background-color: var(--color-black-20);
+    border-radius: 20px;
+    
+
+    &-drag{
+      height: 100%;
+      background-color: var(--color-red-45);
+      border-radius: inherit;
+    }
+  }
+
+  &__item{
+    width: auto;
+    height: unset;
+  }
+  &__navigation{
+    margin-top: fluid(40, 24);
+  }
+}
+
