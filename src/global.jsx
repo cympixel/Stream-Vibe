@@ -46,7 +46,7 @@ export default function (props) {
             <meta key="ogurl" property="og:url" content={link}/>,
             <meta key="ogtitle" property="og:title" content={`Stream Vibe | ${title}`}/>,
             <meta key="ogdes" property="og:description" content={description}/>,
-            <meta key="ogim" property="og:image" content="https://cympixel.github.io/Stream-Vibe/images/og-image.png"/>,
+            <meta key="ogim" property="og:image" content="https://cympixel.github.io/Stream-Vibe/og-image.png"/>,
           ] : (
             <meta name="robots" content="noindex, nofollow" />
           )}
