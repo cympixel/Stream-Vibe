@@ -1,0 +1,107 @@
+.accordion-group {
+  &--has-counter {
+    --accordionGroupCounterHeight: #{fluid(67, 46)};
+
+    counter-reset: custom-counter;
+    list-style: none;
+
+    .accordion-group__item {
+      display: flex;
+      align-items: center;
+      column-gap: fluid-to-laptop(20, 16);
+      counter-increment: custom-counter;
+
+      &::before {
+        @include flex-center;
+
+        content: counter(custom-counter, decimal-leading-zero);
+        min-width: fluid(62, 42);
+        height: var(--accordionGroupCounterHeight);
+        font-size: fluid-to-laptop(20, 16);
+        font-weight: 600;
+        color: var(--color-white);
+        background-color: var(--color-black-12);
+        border: var(--border);
+        border-radius: var(--border-radius-m);
+
+        @include laptop {
+          border-radius: var(--border-radius-s);
+        }
+
+        @include mobile {
+          border-radius: var(--border-radius-xs);
+        }
+      }
+    }
+  }
+  &--dark{
+    display: grid;
+    row-gap: fluid-to-laptop(20, 16);
+
+    .accordion-group__item{
+      padding: fluid(24, 16) fluid(50, 20);
+      background-color: var(--color-black-06);
+      border: var(--border);
+      border-radius: var(--border-radius-l);
+
+      @include laptop{
+        border-radius: var(--border-radius-m);
+      }
+
+      &::after{
+        display: none;
+      }
+    }
+  }
+
+  &--2-columns {
+    column-gap: fluid-to-laptop(80, 40);
+
+    @include tablet-above {
+      column-count: 2;
+    }
+  }
+
+  &__item {
+    padding: fluid-to-laptop(34, 24);
+    break-inside: avoid-column;
+    
+    @include tablet-above {
+      &--last-column-item {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    @include tablet {
+      --accordionGroupItemPaddingY: 40px;
+      --accordionGroupItemHalfPaddingY: calc(var(--accordionGroupItemPaddingY) / 2);
+
+      padding: var(--accordionGroupItemPaddingY) 0;
+
+      &:first-child {
+        padding-top: var(--accordionGroupItemHalfPaddingY);
+      }
+
+      &:last-child {
+        padding-bottom: var(--accordionGroupItemHalfPaddingY);
+      }
+    }
+
+    &:not(:last-child) {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-image:
+        linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, var(--color-red-45) 16.67%, rgba(229, 0, 0, 0.00) 100%);
+      }
+    }
+  }
+}

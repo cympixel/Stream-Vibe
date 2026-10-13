@@ -1,0 +1,133 @@
+.notifications {
+  @include tablet-above{
+    position: relative;
+  }
+  
+
+  &__overlay {
+    position: absolute;
+    top: 80px;  
+    right: 0;
+    z-index: 1200;
+     
+    
+    overflow-y: scroll; 
+    overflow-x: hidden;
+
+    border-radius: 16px;
+    
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.38s ease, visibility 0s linear 0.38s;
+
+    @include tablet-above{
+      background-color: var(--color-black-06);
+      box-shadow: 
+      0 20px 50px -10px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(99, 102, 241, 0.08);
+      max-height: 440px;
+    }
+
+
+    @include tablet{    
+      inset: 0;
+      top: 60px;
+      max-height: unset;
+      overflow-y: visible; 
+      display: flex;
+      justify-content: center;
+      transition: unset;
+    }
+      
+    
+    &.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      
+      
+
+      .notifications__panel {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+ 
+  }
+  &__wrapper{
+    
+  }
+  &__panel {
+    position: relative;
+    
+    border-radius: 16px;
+    
+    padding: 30px;
+ 
+    transform: scale(0.92) translateY(30px);
+    opacity: 0;
+    transition: all 0.48s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    @include tablet-above{
+      width: fluid(350, 200);
+      background: var(--color-black-06);
+    }
+
+    @include tablet{
+      background-color: var(--color-black-08);
+    }
+ 
+    }
+    &__list{   
+        display: grid;
+        gap: 10px;
+    }
+    &__link{
+        width: 100%;
+        color: var(--color-grey-60);
+        padding: 15px 30px 15px 15px;
+        border: var(--border);
+        border-radius: var(--border-radius-xs);
+        background-color: var(--color-black-08);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        @include tablet{
+          justify-content: start;
+        }
+        
+        
+        @include hover{
+            color: var(--color-white);
+            background-color: var(--color-red-60);
+        }
+
+        &-icon{
+          flex-shrink: 0;
+        }
+        &-text{
+          display: -webkit-box;
+          -webkit-line-clamp: 3;          
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+
+         
+          line-clamp: 3;
+        }
+    }
+
+}
+
+
+//Scroll-bar
+
+.notifications__overlay{  
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-grey-60) var(--color-black-12);
+
+}

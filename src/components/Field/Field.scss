@@ -1,0 +1,59 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: fluid-to-laptop(16, 12);
+
+
+  &__label{
+    font-size:fluid-to-laptop(18, 16);
+    font-weight: 600;
+    color: var(--color-white);
+  }
+  &__required-star{
+    color: var(--color-red-45);
+  }
+
+  &__body{
+    display: flex;
+    align-items: center;
+    column-gap:fluid-to-laptop(16, 12);
+    width: 100%;
+  }
+
+  &__control{
+    width: 100%;
+    height:fluid-to-laptop(67, 53);
+    padding-inline: var(--field-padding-x);
+    color: var(--color-white);
+    background-color: var(--color-black-08);
+    border: var(--border);
+    border-radius: var(--border-radius-s);
+    
+    @include laptop{
+         border-radius: var(--border-radius-xs);
+    }
+
+    @include hover{
+        border-color: var(--color-white);
+    }
+    &:user-invalid{
+        border-color: var(--color-red-45);
+    }
+
+    &:disabled{
+        @include disabled;
+    }
+
+    &::placeholder{
+        color: var(--color-grey-60);
+    }
+  }
+
+  textarea.field__control{
+    resize: vertical;
+    min-height: fluid(163, 109);
+    padding-block: fluid-to-laptop(20, 16);
+    max-height: 500px;
+  }
+}

@@ -1,0 +1,122 @@
+.accordion {
+  width: 100%;
+
+  &:has(.accordion__arrow){
+    .accordion__title{
+      padding-right: 0;
+
+      &::before,
+      &::after{
+        display: none;
+      }
+    }
+  }
+  
+  &__details {
+    
+    &[open] {
+      .accordion__title::after {
+        rotate: 0deg;
+      }
+
+      & + .accordion__content {
+        grid-template-rows: 1fr;
+      }
+
+      .accordion__arrow{
+        rotate: 180deg;
+      }
+    }
+  }
+
+  &__summary {
+    
+    color: var(--color-white);
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+
+    position: relative;
+
+    &::after{
+      position: absolute;
+      content: '';
+      top: -25px;
+      bottom: -25px;
+    }
+
+    @include hover {
+      color: var(--color-red-60);
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: fluid(10, 6);
+  
+    padding-right: 50px;
+    color: inherit;
+    transition-duration: var(--transition-duration);
+   
+
+    &::before,
+    &::after {
+      @include abs-y;
+
+      content: '';
+      right: 0;
+      width: fluid-to-laptop(20, 16);
+      height: 2.5px;
+      background-color: var(--color-white);
+      border-radius: 10px;
+      transition-duration: var(--transition-duration);
+
+      @include laptop {
+        height: 2px;
+      }
+    }
+
+    &::after {
+      rotate: 90deg;
+    }
+  }
+  &__subtitle{
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--color-grey-60);
+  }
+
+  &__arrow{
+    @include flex-center(true);
+    @include square(fluid-to-laptop(52, 44));
+
+    margin-left: auto;
+    color: var(--color-grey-60);
+    background-color: var(--color-black-08);
+    border: var(--border);
+    border-radius: 50%;
+    transition-duration: var(--transition-duration);
+
+    
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition-duration: var(--transition-duration-longer);
+
+    &-inner {
+      overflow: hidden;
+    }
+
+    &-body {
+      margin-top: 20px;
+    }
+  }
+}

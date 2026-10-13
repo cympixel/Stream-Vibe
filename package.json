@@ -1,0 +1,32 @@
+{
+  "name": "minista-project",
+  "private": true,
+  "homepage": "https://cympixel.github.io/Stream-Vibe",
+  "type": "module",
+  "scripts": {
+    "start": "minista --host",
+    "build": "minista build",
+    "preview": "minista preview",
+    "component": "plop component",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "gh-pages": "6.3.0",
+    "minista": "^3.1.12",
+    "plop": "^4.0.4",
+    "postcss-preset-env": "^11.2.0",
+    "postcss-pxtorem": "^6.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.81.0"
+  },
+  "dependencies": {
+    "@a1rth/css-normalize": "^1.1.9",
+    "classnames": "^2.5.1",
+    "imask": "^7.6.1",
+    "swiper": "^11.1.15"
+  }
+}
